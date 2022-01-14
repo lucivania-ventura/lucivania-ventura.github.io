@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Contatos - Cafeteria LV</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="produtoslv.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="caixa">
+            <h1><img class="img1"
+                    src="https://static.vecteezy.com/ti/vetor-gratis/p1/1958794-desenho-desenho-de-xicara-de-cafe-com-coracao-continuo-unico-mao-desenhado-ilustracao-minimalismo-desenho-desenho-de-uma-linha-vetor.jpg" alt="Logo - Cafeteria LV">
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="teste">
+        <form>
+
+            <label for="nomesobrenome">Nome e Sobrenome</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" required placeholder="Nome + Sobrenome">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="Seu email@dominio.com">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea cols="61" rows="10" id="mensagem" class="input-padrao"></textarea>
+
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone"
+                        id="radio-telefone">Telefone</label>
+
+                <label for="radio-whatsApp"><input type="radio" name="contato" value="whatsApp"
+                        id="radio-whatsApp" checked>whatsApp</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+
+            <input type="submit" value="Enviar formulário" id="mensagem" class="enviar">
+
+        </form>
+            
+        <table>
+            <thead>
+                 <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>   
+
+            <tbody>
+                <tr>
+                    <td>Segunda a Sexta</td>
+                    <td>7h - 22h</td>
+                </tr>
+                <tr>
+                     <td>Sábado e Domingo</td>
+                     <td>6h - 23h</td>
+                 </tr>
+                 <tr>
+                    <td>Feriados</td>
+                     <td>8h - 12h</td>
+                </tr>
+            </tbody>     
+
+        </table>
+
+    </main>
+    <footer>
+        <img class="img3" src="https://cdn-icons-png.flaticon.com/512/633/633652.png" alt="Logo - Cafeteria LV"/>
+        <p class="fot">&copyCopyright Cafeteria LV - 2022 </p>
+    </footer>
+</body>
+
+</html>
